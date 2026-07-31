@@ -62,7 +62,7 @@ export function Hero() {
               whileHover={{ y: -3 }}
               whileTap={{ scale: 0.97 }}
               transition={{ duration: 0.3, ease }}
-              className="group inline-flex items-center justify-center gap-3 rounded-full bg-primary px-8 py-4 text-[0.74rem] uppercase tracking-[0.16em] text-primary-foreground shadow-soft transition-shadow duration-300 hover:shadow-soft-lg"
+              className="group inline-flex items-center justify-center gap-3 rounded-full bg-primary px-8 py-4 whitespace-nowrap text-[0.74rem] uppercase tracking-[0.16em] text-primary-foreground shadow-soft transition-shadow duration-300 hover:shadow-soft-lg"
             >
               <WhatsAppIcon className="h-4 w-4" />
               Agendar pelo WhatsApp
@@ -72,7 +72,7 @@ export function Hero() {
               whileHover={{ y: -3 }}
               whileTap={{ scale: 0.97 }}
               transition={{ duration: 0.3, ease }}
-              className="group inline-flex items-center justify-center gap-2 rounded-full border border-foreground/20 px-8 py-4 text-[0.74rem] uppercase tracking-[0.16em] text-foreground transition-colors duration-300 hover:border-foreground/50 hover:bg-accent/50"
+              className="group inline-flex items-center justify-center gap-2 rounded-full border border-foreground/20 px-8 py-4 whitespace-nowrap text-[0.74rem] uppercase tracking-[0.16em] text-foreground transition-colors duration-300 hover:border-foreground/50 hover:bg-accent/50"
             >
               Conheça nossos serviços
               <ArrowDownRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:translate-y-0.5" />
