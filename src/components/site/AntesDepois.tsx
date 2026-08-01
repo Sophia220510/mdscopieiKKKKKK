@@ -1,6 +1,7 @@
 import { transformacoes, whatsappLink } from "@/data/site";
 import { SectionHeading } from "./SectionHeading";
 import { Reveal } from "./Reveal";
+import { PremiumCTA } from "./PremiumCTA";
 
 export function AntesDepois() {
   return (
@@ -15,12 +16,15 @@ export function AntesDepois() {
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:mt-20 lg:grid-cols-3">
           {transformacoes.map((item, i) => (
             <Reveal key={item.titulo} delay={i * 0.09}>
-              <figure className="group relative overflow-hidden rounded-2xl bg-card shadow-soft">
-                <div className="relative aspect-4/5 overflow-hidden">
+              <figure
+                className="group relative overflow-hidden rounded-2xl bg-card shadow-soft ring-1 ring-border/60 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-soft-lg"
+              >
+                <div className="relative aspect-[4/5] overflow-hidden">
                   <img
                     src={item.antes}
                     alt={`Antes — ${item.titulo}`}
                     loading="lazy"
+                    decoding="async"
                     width={800}
                     height={1000}
                     className="absolute inset-0 h-full w-full object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-105"
@@ -29,10 +33,12 @@ export function AntesDepois() {
                     src={item.depois}
                     alt={`Depois — ${item.titulo}`}
                     loading="lazy"
+                    decoding="async"
                     width={800}
                     height={1000}
                     className="absolute inset-0 h-full w-full object-cover opacity-0 transition-all duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-105 group-hover:opacity-100 group-focus-within:opacity-100"
                   />
+                  <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-black/25 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                   <span className="absolute left-4 top-4 rounded-full bg-background/85 px-4 py-1.5 text-[0.62rem] uppercase tracking-[0.2em] text-foreground backdrop-blur-sm transition-opacity duration-500 group-hover:opacity-0">
                     Antes
                   </span>
@@ -53,14 +59,9 @@ export function AntesDepois() {
 
         <Reveal delay={0.15}>
           <div className="mt-14 flex justify-center">
-            <a
-              href={whatsappLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center rounded-full border border-foreground/20 px-8 py-4 text-[0.72rem] uppercase tracking-[0.16em] text-foreground transition-all duration-300 hover:-translate-y-0.5 hover:border-foreground/50 hover:bg-accent/60"
-            >
+            <PremiumCTA href={whatsappLink} variant="outline">
               Ver mais transformações
-            </a>
+            </PremiumCTA>
           </div>
         </Reveal>
       </div>

@@ -2,21 +2,24 @@ import { motion, useScroll, useTransform } from "motion/react";
 import { ArrowDownRight } from "lucide-react";
 import { whatsappLink } from "@/data/site";
 import { WhatsAppIcon } from "./WhatsAppButton";
+import { PremiumCTA } from "./PremiumCTA";
+import { AmbientGlow } from "./AmbientGlow";
 import heroImg from "@/assets/hero.jpg";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
 export function Hero() {
   const { scrollY } = useScroll();
-  const y = useTransform(scrollY, [0, 800], [0, 110]);
-  const scale = useTransform(scrollY, [0, 800], [1, 1.08]);
+  const y = useTransform(scrollY, [0, 800], [0, 45]);
+  const scale = useTransform(scrollY, [0, 800], [1, 1.03]);
 
   return (
     <section
       id="inicio"
-      className="relative flex min-h-[100svh] items-center overflow-hidden bg-mist pt-28 pb-16 lg:pt-24 lg:pb-0"
+      className="relative isolate flex min-h-[100svh] items-center overflow-hidden bg-mist pt-28 pb-16 lg:pt-24 lg:pb-0"
     >
       <div className="absolute inset-y-0 right-0 hidden w-[46%] bg-sand lg:block" />
+      <AmbientGlow />
 
       <div className="container-site relative grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
         <div className="max-w-xl">
@@ -55,28 +58,14 @@ export function Hero() {
             transition={{ duration: 0.9, delay: 1.35, ease }}
             className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center"
           >
-            <motion.a
-              href={whatsappLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ y: -3 }}
-              whileTap={{ scale: 0.97 }}
-              transition={{ duration: 0.3, ease }}
-              className="group inline-flex items-center justify-center gap-3 rounded-full bg-primary px-8 py-4 whitespace-nowrap text-[0.74rem] uppercase tracking-[0.16em] text-primary-foreground shadow-soft transition-shadow duration-300 hover:shadow-soft-lg"
-            >
+            <PremiumCTA href={whatsappLink} variant="solid">
               <WhatsAppIcon className="h-4 w-4" />
               Agendar pelo WhatsApp
-            </motion.a>
-            <motion.a
-              href="#servicos"
-              whileHover={{ y: -3 }}
-              whileTap={{ scale: 0.97 }}
-              transition={{ duration: 0.3, ease }}
-              className="group inline-flex items-center justify-center gap-2 rounded-full border border-foreground/20 px-8 py-4 whitespace-nowrap text-[0.74rem] uppercase tracking-[0.16em] text-foreground transition-colors duration-300 hover:border-foreground/50 hover:bg-accent/50"
-            >
+            </PremiumCTA>
+            <PremiumCTA href="#servicos" variant="outline" external={false} className="group">
               Conheça nossos serviços
               <ArrowDownRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:translate-y-0.5" />
-            </motion.a>
+            </PremiumCTA>
           </motion.div>
         </div>
 
@@ -86,12 +75,14 @@ export function Hero() {
           transition={{ duration: 1.3, delay: 0.85, ease }}
           className="relative lg:h-[86vh]"
         >
-          <div className="relative h-[58vh] overflow-hidden rounded-t-[999px] rounded-b-2xl sm:h-[70vh] lg:h-full">
+          <div className="motion-safe:animate-hero-float relative h-[58vh] overflow-hidden rounded-t-[999px] rounded-b-2xl sm:h-[70vh] lg:h-full">
             <motion.img
               src={heroImg}
-              alt="Mulher com cabelo bem cuidado no salão Atelier Lumière"
+              alt="Mulher com cabelo bem cuidado no salão Studio Renovação"
               width={1008}
               height={1408}
+              decoding="async"
+              fetchPriority="high"
               style={{ y, scale }}
               className="h-full w-full object-cover object-center"
             />

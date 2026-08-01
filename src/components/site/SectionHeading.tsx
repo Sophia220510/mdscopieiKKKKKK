@@ -9,30 +9,24 @@ type Props = {
 
 export function SectionHeading({ eyebrow, title, description, align = "center" }: Props) {
   return (
-    <div
+    <Reveal
       className={
         align === "center"
           ? "mx-auto max-w-2xl text-center"
           : "max-w-2xl text-left"
       }
     >
-      <Reveal>
-        <span className="text-[0.7rem] uppercase tracking-[0.32em] text-muted-foreground">
-          {eyebrow}
-        </span>
-      </Reveal>
-      <Reveal delay={0.08}>
-        <h2 className="mt-5 font-serif text-3xl font-light leading-[1.15] text-foreground sm:text-4xl md:text-[2.75rem]">
-          {title}
-        </h2>
-      </Reveal>
+      <span className="text-[0.7rem] uppercase tracking-[0.32em] text-muted-foreground">
+        {eyebrow}
+      </span>
+      <h2 className="mt-5 font-serif text-3xl font-light leading-[1.15] text-foreground sm:text-4xl md:text-[2.75rem]">
+        {title}
+      </h2>
       {description && (
-        <Reveal delay={0.16}>
-          <p className="mt-5 text-sm leading-relaxed text-muted-foreground sm:text-base">
-            {description}
-          </p>
-        </Reveal>
+        <p className="mt-5 text-sm leading-relaxed text-muted-foreground sm:text-base">
+          {description}
+        </p>
       )}
-    </div>
+    </Reveal>
   );
 }

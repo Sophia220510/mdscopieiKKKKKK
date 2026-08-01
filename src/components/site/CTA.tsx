@@ -1,11 +1,13 @@
-import { motion } from "motion/react";
 import { whatsappLink } from "@/data/site";
 import { WhatsAppIcon } from "./WhatsAppButton";
 import { Reveal } from "./Reveal";
+import { PremiumCTA } from "./PremiumCTA";
+import { AmbientGlow } from "./AmbientGlow";
 
 export function CTA() {
   return (
-    <section className="bg-sand py-24 sm:py-32 lg:py-40">
+    <section className="relative isolate overflow-hidden bg-sand py-24 sm:py-32 lg:py-40">
+      <AmbientGlow variant="soft" />
       <div className="container-site text-center">
         <Reveal>
           <span className="text-[0.7rem] uppercase tracking-[0.32em] text-clay">
@@ -23,19 +25,16 @@ export function CTA() {
           </p>
         </Reveal>
         <Reveal delay={0.24}>
-          <motion.a
-            href={whatsappLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            animate={{ scale: [1, 1.035, 1] }}
-            transition={{ duration: 2.6, repeat: Infinity, ease: "easeInOut" }}
-            whileHover={{ scale: 1.06 }}
-            whileTap={{ scale: 0.97 }}
-            className="mt-12 inline-flex items-center gap-3 rounded-full bg-whatsapp px-10 py-5 text-[0.78rem] uppercase tracking-[0.16em] text-whatsapp-foreground shadow-soft-lg"
-          >
-            <WhatsAppIcon className="h-5 w-5" />
-            Falar no WhatsApp
-          </motion.a>
+          <div className="mt-12 flex justify-center">
+            <PremiumCTA
+              href={whatsappLink}
+              variant="whatsapp"
+              className="px-10 py-5 text-[0.78rem]"
+            >
+              <WhatsAppIcon className="h-5 w-5" />
+              Falar no WhatsApp
+            </PremiumCTA>
+          </div>
         </Reveal>
       </div>
     </section>

@@ -9,7 +9,15 @@ export function Footer() {
       <div className="container-site grid gap-14 py-20 lg:grid-cols-4 lg:gap-10 lg:py-24">
         <div className="lg:col-span-1">
           <div className="flex min-w-0 items-center gap-3">
-            <img src={logo} alt="" loading="lazy" width={512} height={512} className="h-9 w-9 shrink-0 object-contain" />
+            <img
+              src={logo}
+              alt=""
+              loading="lazy"
+              decoding="async"
+              width={512}
+              height={512}
+              className="h-9 w-9 shrink-0 rounded-full object-cover ring-1 ring-foreground/10"
+            />
             <span className="truncate font-serif text-lg uppercase tracking-[0.18em] text-foreground">
               {salao.nome}
             </span>

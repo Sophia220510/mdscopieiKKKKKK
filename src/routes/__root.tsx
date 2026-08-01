@@ -77,14 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Atelier Lumière — Salão de Beleza no Centro de São Paulo" },
+      { title: "Studio Renovação — Salão de Beleza no Centro de São Paulo" },
       {
         name: "description",
         content:
           "Salão de beleza acolhedor no centro de São Paulo: cortes, coloração, escova, manicure, barbearia e tratamentos.",
       },
-      { name: "author", content: "Atelier Lumière" },
-      { property: "og:site_name", content: "Atelier Lumière" },
+      { name: "author", content: "Studio Renovação" },
+      { property: "og:site_name", content: "Studio Renovação" },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "pt_BR" },
       { name: "twitter:card", content: "summary_large_image" },

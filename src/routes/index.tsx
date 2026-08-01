@@ -11,8 +11,9 @@ import { Footer } from "@/components/site/Footer";
 import { WhatsAppFloating } from "@/components/site/WhatsAppButton";
 import { Loader } from "@/components/site/Loader";
 import { salao } from "@/data/site";
+import heroImg from "@/assets/hero.jpg";
 
-const title = "Atelier Lumière — Salão de Beleza no Centro de São Paulo";
+const title = "Studio Renovação — Salão de Beleza no Centro de São Paulo";
 const description =
   "Salão de beleza no centro de São Paulo: cortes, coloração, escova, manicure, barbearia e tratamentos com atendimento personalizado. Agende pelo WhatsApp.";
 
@@ -27,7 +28,10 @@ export const Route = createFileRoute("/")({
       { property: "og:url", content: "/" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [
+      { rel: "canonical", href: "/" },
+      { rel: "preload", as: "image", href: heroImg },
+    ],
     scripts: [
       {
         type: "application/ld+json",

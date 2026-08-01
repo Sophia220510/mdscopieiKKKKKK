@@ -19,8 +19,8 @@ export function Diferenciais() {
             const Icon = icons[item.icone as keyof typeof icons];
             return (
               <Reveal as="li" key={item.titulo} delay={i * 0.07}>
-                <div className="flex min-w-0 gap-5">
-                  <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-border text-clay">
+                <div className="group flex min-w-0 gap-5">
+                  <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-border text-clay transition-all duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:scale-110 group-hover:border-clay/50 group-hover:bg-sand">
                     <Icon className="h-4.5 w-4.5" strokeWidth={1.4} />
                   </span>
                   <div className="min-w-0">

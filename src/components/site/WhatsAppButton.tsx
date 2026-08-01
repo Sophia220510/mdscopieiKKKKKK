@@ -1,22 +1,40 @@
-import { motion } from "motion/react";
+import { useState } from "react";
+import { AnimatePresence, motion } from "motion/react";
 import { whatsappLink } from "@/data/site";
 
 export function WhatsAppFloating() {
+  const [hovering, setHovering] = useState(false);
+
   return (
     <motion.a
       href={whatsappLink}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Falar no WhatsApp"
-      initial={{ opacity: 0, scale: 0.6 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ delay: 1.4, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-      whileHover={{ scale: 1.08 }}
-      whileTap={{ scale: 0.95 }}
-      className="fixed bottom-5 right-5 z-50 grid h-14 w-14 place-items-center rounded-full bg-whatsapp text-whatsapp-foreground shadow-soft-lg sm:bottom-8 sm:right-8"
+      onHoverStart={() => setHovering(true)}
+      onHoverEnd={() => setHovering(false)}
+      initial={{ opacity: 0, scale: 0.6, y: 20 }}
+      animate={{ opacity: 1, y: 0, scale: 1 }}
+      transition={{ duration: 0.5, delay: 1.4, ease: [0.22, 1, 0.36, 1] }}
+      whileHover={{ scale: 1.08, transition: { type: "spring", stiffness: 340, damping: 20 } }}
+      whileTap={{ scale: 0.94 }}
+      className="fixed bottom-5 right-5 z-50 grid h-14 w-14 place-items-center rounded-full border border-white/25 bg-whatsapp/85 text-whatsapp-foreground shadow-soft-lg backdrop-blur-md sm:bottom-8 sm:right-8"
     >
-      <span className="absolute inset-0 animate-ping-slow rounded-full bg-whatsapp/40" />
-      <WhatsAppIcon className="relative h-7 w-7" />
+      <WhatsAppIcon className="relative h-7 w-7 drop-shadow-sm" />
+
+      <AnimatePresence>
+        {hovering && (
+          <motion.span
+            initial={{ opacity: 0, x: 8, scale: 0.9 }}
+            animate={{ opacity: 1, x: 0, scale: 1 }}
+            exit={{ opacity: 0, x: 8, scale: 0.9 }}
+            transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
+            className="pointer-events-none absolute right-full mr-3 whitespace-nowrap rounded-full border border-border/60 bg-background/90 px-4 py-2 text-[0.7rem] uppercase tracking-[0.12em] text-foreground shadow-soft backdrop-blur-md"
+          >
+            Fale conosco
+          </motion.span>
+        )}
+      </AnimatePresence>
     </motion.a>
   );
 }

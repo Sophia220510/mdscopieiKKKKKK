@@ -15,11 +15,11 @@ import equipe4 from "@/assets/equipe-4.jpg";
  */
 
 export const salao = {
-  nome: "Atelier Lumière",
+  nome: "Studio Renovação",
   slogan: "Salão de beleza no centro de São Paulo",
-  telefone: "(11) 99999-9999",
-  whatsapp: "5511999999999",
-  instagram: "@atelierlumiere",
+  telefone: "(11) 95150-5124",
+  whatsapp: "5511951505124",
+  instagram: "@studiorenovacao",
   instagramUrl: "https://instagram.com",
   endereco: "Rua Barão de Itapetininga, 120 — Centro, São Paulo — SP",
   mapaUrl:
@@ -31,7 +31,9 @@ export const salao = {
   ],
 };
 
-export const whatsappLink = `https://wa.me/${salao.whatsapp}`;
+const whatsappMensagem = "Olá! Gostaria de agendar um horário no Studio Renovação.";
+
+export const whatsappLink = `https://wa.me/${salao.whatsapp}?text=${encodeURIComponent(whatsappMensagem)}`;
 
 export const navLinks = [
   { label: "Início", href: "#inicio" },
