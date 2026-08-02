@@ -265,6 +265,71 @@
   }
 }
 
+/* BeforeAfterSlider — recorte via clip-path, handle com brilho sutil e dica de interação. */
+.bas-root {
+  touch-action: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.bas-before-img,
+.bas-divider {
+  will-change: transform, clip-path;
+}
+
+.bas-handle::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: 9999px;
+  background: linear-gradient(
+    155deg,
+    oklch(1 0 0 / 0.35) 0%,
+    oklch(1 0 0 / 0) 45%
+  );
+  pointer-events: none;
+}
+
+.bas-handle {
+  box-shadow:
+    0 0 0 6px oklch(1 0 0 / 0.06),
+    var(--shadow-soft-lg);
+}
+
+/* Micro animação de dica: dispara uma única vez quando o slider entra em tela. */
+@keyframes bas-hint-divider {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(14%);
+  }
+  62% {
+    transform: translateX(-10%);
+  }
+}
+
+@keyframes bas-hint-clip {
+  0%,
+  100% {
+    clip-path: inset(0 50% 0 0);
+  }
+  30% {
+    clip-path: inset(0 36% 0 0);
+  }
+  62% {
+    clip-path: inset(0 60% 0 0);
+  }
+}
+
+.bas-hint .bas-divider {
+  animation: bas-hint-divider 1.15s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.bas-hint .bas-before-img {
+  animation: bas-hint-clip 1.15s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
