@@ -18,6 +18,6 @@ Matheus é um confeiteiro adulto fictício criado por IA. Tem cabelo loiro escur
 
 ## Conteúdo
 
-Nome, apresentação, textos alternativos, créditos e metadados usam Matheus e concordância masculina. As imagens anteriores da personagem foram removidas. Os 19 prints originais das alunas permanecem sem mudanças nos nomes, mensagens ou pixels. A página continua sem o bloco promocional removido anteriormente, com 12 seções e seis perguntas frequentes.
+Nome, apresentação, textos alternativos, créditos e metadados usam Matheus e concordância masculina. As imagens anteriores da personagem foram removidas. Os 19 prints originais das alunas permanecem sem mudanças nos nomes, mensagens ou pixels. A página continua sem o bloco promocional removido anteriormente, com 12 seções e quatro perguntas frequentes.
 
 O rodapé identifica o personagem de IA, a finalidade escolar e a origem dos prints.

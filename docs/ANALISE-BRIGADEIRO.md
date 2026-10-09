@@ -19,7 +19,7 @@ A página pública é uma landing page longa, sem menu nem links de navegação 
 | `oferta` | Texto, valores de 8x R$5,38 e R$37,00 à vista e botão. |
 | `garantia` | Selo e texto da garantia. |
 | `autor` | Cartão de atualizações, botão, apresentação de Matheus e retrato criado por IA. |
-| `duvidas` | Seis perguntas que expandem e recolhem individualmente. |
+| `duvidas` | Quatro perguntas que expandem e recolhem individualmente. |
 | `chamada-final` | Última chamada e botão. |
 | `rodape` | Créditos originais. |
 
