@@ -17,6 +17,10 @@ npm run dev
 
 Para gerar a versão de produção, execute `npm run build`.
 
+## Publicar na Vercel
+
+Importe este repositório com a branch `main`. O arquivo `vercel.json` configura o framework TanStack Start, a instalação com `npm ci` e a compilação com `npm run build`. O preset Vercel do Nitro gera os arquivos estáticos e a função de servidor em `.vercel/output/`.
+
 ## Arquivos principais
 
 - `src/data/brigadeiro-sections.json`: conteúdo das seções.
