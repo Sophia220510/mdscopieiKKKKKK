@@ -1,6 +1,6 @@
 # O Brigadeiro Perfeito — reprodução escolar
 
-Adaptação da página <https://obrigadeiroperfeito.com.br/> para um exercício escolar de desenvolvimento web. Inclui as 13 seções, imagens e fontes locais, carrosséis responsivos e perguntas expansíveis. A personagem Larissa e suas quatro imagens foram criadas por IA; as mensagens do carrossel são demonstrativas.
+Adaptação da página <https://obrigadeiroperfeito.com.br/> para um exercício escolar de desenvolvimento web. Inclui as 13 seções, imagens e fontes locais, carrosséis responsivos e perguntas expansíveis. A personagem Larissa e suas quatro imagens foram criadas por IA; o carrossel mantém os 19 prints originais das avaliações das alunas.
 
 Os botões de compra abrem uma demonstração local identificada como projeto escolar. Não há processamento de pagamentos.
 

@@ -1,80 +1,4 @@
 /* Original responsive styles: public/replica. Test dialog styles: below. */
-.elementor .larissa-testimonial {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 9 / 16;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 28px 18px;
-  border-radius: 40px;
-  background: #0e1118;
-  color: #f4f4f6;
-  font-family: Arial, sans-serif;
-  line-height: 1.45;
-  text-align: left;
-}
-.larissa-testimonial-label {
-  position: absolute;
-  top: 24px;
-  left: 18px;
-  right: 18px;
-  font-size: 9px;
-  color: #9b9ca3;
-  letter-spacing: 1.3px;
-  text-align: center;
-}
-.larissa-message-date {
-  margin-bottom: 20px;
-  color: #888a94;
-  font-size: 10px;
-  text-align: center;
-}
-.larissa-message-bubble {
-  border-radius: 22px 22px 22px 4px;
-  padding: 19px 17px 12px;
-  background: #26272f;
-}
-.larissa-message-bubble p {
-  font-size: 17px;
-  line-height: 1.5;
-  margin: 0 0 10px;
-  color: #f4f4f6;
-}
-.larissa-message-time {
-  display: block;
-  color: #92939b;
-  font-size: 10px;
-  text-align: right;
-}
-.larissa-message-reaction {
-  margin: 9px 0 0 10px;
-  color: #f78194;
-  font-size: 25px;
-}
-.larissa-message-input {
-  position: absolute;
-  bottom: 42px;
-  left: 14px;
-  right: 14px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 15px;
-  border-radius: 30px;
-  color: #82848f;
-  background: #23242b;
-  font-size: 12px;
-}
-.larissa-message-input span:first-child {
-  color: #7890ff;
-  font-size: 23px;
-}
-.larissa-message-input span:last-child {
-  margin-left: auto;
-  color: #eee;
-  font-size: 22px;
-}
 .elementor .elementor-widget-video .larissa-feature-photo {
   display: block;
   position: absolute;
@@ -91,12 +15,6 @@
   line-height: 1.6;
   margin-top: 8px;
 }
-@media (max-width: 767px) {
-  .larissa-message-bubble p {
-    font-size: 16px;
-  }
-}
-
 .school-checkout {
   width: min(460px, calc(100% - 32px));
   margin: auto;

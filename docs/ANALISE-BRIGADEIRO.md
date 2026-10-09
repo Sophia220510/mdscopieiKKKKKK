@@ -2,7 +2,7 @@
 
 Referência: <https://obrigadeiroperfeito.com.br/>. Inspeção em 8 de outubro de 2026.
 
-Os números da comparação visual abaixo se referem à primeira reprodução, antes da adaptação da personagem. A versão atual usa Larissa, uma confeiteira fictícia criada por IA, fotos e capas novas, mensagens demonstrativas editáveis e uma seção de criatividade no lugar do vídeo original. Veja [Larissa](LARISSA.md).
+Os números da comparação visual abaixo se referem à primeira reprodução, antes da adaptação da personagem. A versão atual usa Larissa, uma confeiteira fictícia criada por IA, fotos e capas novas, os 19 prints originais de avaliações e uma seção de criatividade no lugar do vídeo original. Veja [Larissa](LARISSA.md).
 
 ## Estrutura analisada
 
@@ -45,7 +45,7 @@ Validação concluída: compilação de produção, TypeScript e lint dos arquiv
 
 Para executar: `npm install` e `npm run dev`. Para gerar a versão de produção: `npm run build`.
 
-Os arquivos preservados da referência pertencem aos respectivos titulares; as imagens novas de Larissa foram geradas por IA para o exercício escolar. O vídeo original foi removido. O projeto identifica o caráter escolar nos metadados, no rodapé, nas mensagens demonstrativas e na demonstração de compra, e desativa a indexação. Os scripts comerciais de rastreamento do original não foram incluídos.
+Os arquivos preservados da referência pertencem aos respectivos titulares; as imagens novas de Larissa foram geradas por IA para o exercício escolar. Os prints de avaliações foram preservados sem alterações. O vídeo original foi removido. O projeto identifica o caráter escolar nos metadados, no rodapé e na demonstração de compra, e desativa a indexação. Os scripts comerciais de rastreamento do original não foram incluídos.
 
 O original contém diferenças de valores entre a oferta e uma resposta das perguntas frequentes, além de números de alunos e créditos de anos anteriores. Esses elementos foram mantidos para preservar a referência antes dos testes de alterações.
 

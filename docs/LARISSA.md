@@ -23,6 +23,6 @@ O retrato foi a referência de identidade para as outras três imagens. Em todas
 
 ## Alterações de conteúdo
 
-A apresentação e os créditos usam Larissa e concordância feminina. As imagens antigas da pessoa, suas variantes e os prints de mensagens foram removidos de `public/replica/assets/`: 50 arquivos ao todo. Os 19 slides de mensagens agora usam HTML e CSS editáveis e identificam seu caráter demonstrativo. O vídeo externo foi removido, e a seção correspondente apresenta criatividade na confeitaria sem atribuir à personagem uma participação em televisão.
+A apresentação e os créditos usam Larissa e concordância feminina. As fotos antigas do autor e suas variantes foram substituídas pelas imagens da personagem. O carrossel de avaliações mantém os 19 prints originais das alunas, sem alterar nomes, mensagens ou pixels. O vídeo externo foi removido, e a seção correspondente apresenta criatividade na confeitaria sem atribuir à personagem uma participação em televisão.
 
-O rodapé identifica a personagem de IA e a finalidade escolar. O layout responsivo e os carrosséis de sabores e de fotos de brigadeiros foram preservados.
+O rodapé identifica a personagem de IA, a finalidade escolar e a origem dos prints de avaliações. O layout responsivo e os carrosséis de sabores e de fotos de brigadeiros foram preservados.
