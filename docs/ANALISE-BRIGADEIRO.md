@@ -2,7 +2,7 @@
 
 Referência: <https://obrigadeiroperfeito.com.br/>. Inspeção em 8 de outubro de 2026.
 
-Os números da comparação visual abaixo se referem à primeira reprodução, antes da adaptação da personagem. A versão atual usa Rafael, um confeiteiro fictício criado por IA, fotos e capas novas, os 19 prints originais de avaliações e uma seção de criatividade no lugar do vídeo original. Veja [Rafael](RAFAEL.md).
+Os números da comparação visual abaixo se referem à primeira reprodução, antes da adaptação da personagem. A versão atual usa Matheus, um confeiteiro fictício criado por IA, fotos e capas novas, os 19 prints originais de avaliações e uma seção de criatividade no lugar do vídeo original. Veja [Matheus](MATHEUS.md).
 
 ## Estrutura analisada
 
@@ -14,11 +14,11 @@ A página pública é uma landing page longa, sem menu nem links de navegação 
 | `depoimentos` | Título, ornamento, carrossel de 19 imagens, indicadores e botão. |
 | `para-quem` | Fundo com bordas decoradas, quatro cartões de benefícios e botão. |
 | `sabores` | Carrossel de 14 imagens, indicadores e botão. |
-| `criatividade` | Foto do Rafael, texto sobre sabores criativos, botão e carrossel de 12 imagens com setas. |
+| `criatividade` | Foto do Matheus, texto sobre sabores criativos, botão e carrossel de 12 imagens com setas. |
 | `conteudo` | Lista de 10 conteúdos e imagem do guia. |
 | `oferta` | Texto, valores de 8x R$5,38 e R$37,00 à vista e botão. |
 | `garantia` | Selo e texto da garantia. |
-| `autor` | Cartão de atualizações, botão, apresentação de Rafael e retrato criado por IA. |
+| `autor` | Cartão de atualizações, botão, apresentação de Matheus e retrato criado por IA. |
 | `duvidas` | Seis perguntas que expandem e recolhem individualmente. |
 | `chamada-final` | Última chamada e botão. |
 | `rodape` | Créditos originais. |
@@ -44,7 +44,7 @@ Validação concluída: compilação de produção, TypeScript e lint dos arquiv
 
 Para executar: `npm install` e `npm run dev`. Para gerar a versão de produção: `npm run build`.
 
-Os arquivos preservados da referência pertencem aos respectivos titulares; as imagens novas de Rafael foram geradas por IA para o exercício escolar. Os prints de avaliações foram preservados sem alterações. O vídeo original foi removido. O projeto identifica o caráter escolar nos metadados, no rodapé e na demonstração de compra, e desativa a indexação. Os scripts comerciais de rastreamento do original não foram incluídos.
+Os arquivos preservados da referência pertencem aos respectivos titulares; as imagens novas de Matheus foram geradas por IA para o exercício escolar. Os prints de avaliações foram preservados sem alterações. O vídeo original foi removido. O projeto identifica o caráter escolar nos metadados, no rodapé e na demonstração de compra, e desativa a indexação. Os scripts comerciais de rastreamento do original não foram incluídos.
 
 O original contém diferenças de valores entre a oferta e uma resposta das perguntas frequentes, além de números de alunos e créditos de anos anteriores. Esses elementos foram mantidos para preservar a referência antes dos testes de alterações.
 

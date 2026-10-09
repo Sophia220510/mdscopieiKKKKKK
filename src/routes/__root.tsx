@@ -84,7 +84,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content: "Projeto escolar de reprodução do site O Brigadeiro Perfeito.",
       },
       { name: "robots", content: "noindex, nofollow" },
-      { name: "author", content: "Rafael — personagem de IA" },
+      { name: "author", content: "Matheus — personagem de IA" },
       { property: "og:site_name", content: "O Brigadeiro Perfeito — estudo" },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "pt_BR" },
