@@ -1,5 +1,5 @@
 /* Original responsive styles: public/replica. Test dialog styles: below. */
-.elementor .elementor-widget-video .larissa-feature-photo {
+.elementor .elementor-widget-video .chef-feature-photo {
   display: block;
   position: absolute;
   width: 100%;
@@ -9,7 +9,7 @@
   background: #f5f1eb;
   border-radius: inherit;
 }
-.elementor .larissa-school-note {
+.elementor .school-project-note {
   color: #eed6d2;
   font-size: 10px;
   line-height: 1.6;

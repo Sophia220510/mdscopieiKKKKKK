@@ -1,6 +1,6 @@
 # O Brigadeiro Perfeito — reprodução escolar
 
-Adaptação da página <https://obrigadeiroperfeito.com.br/> para um exercício escolar de desenvolvimento web. Inclui 12 seções, imagens e fontes locais, carrosséis responsivos e perguntas expansíveis. A personagem Larissa e suas três imagens foram criadas por IA; o carrossel mantém os 19 prints originais das avaliações das alunas.
+Adaptação da página <https://obrigadeiroperfeito.com.br/> para um exercício escolar de desenvolvimento web. Inclui 12 seções, imagens e fontes locais, carrosséis responsivos e perguntas expansíveis. O personagem Rafael e suas três imagens foram criados por IA; o carrossel mantém os 19 prints originais das avaliações das alunas.
 
 Os botões de compra abrem uma demonstração local identificada como projeto escolar. Não há processamento de pagamentos.
 
@@ -28,4 +28,4 @@ Importe este repositório com a branch `main`. O arquivo `vercel.json` configura
 - `public/replica/`: estilos, imagens e fontes da referência.
 - [Análise e validação](docs/ANALISE-BRIGADEIRO.md): estrutura, comparação visual e testes realizados.
 
-A adaptação tem finalidade escolar. Os elementos da referência pertencem aos respectivos titulares. Veja os arquivos e os prompts da personagem em [Larissa](docs/LARISSA.md).
+A adaptação tem finalidade escolar. Os elementos da referência pertencem aos respectivos titulares. Veja os arquivos e os prompts da personagem em [Rafael](docs/RAFAEL.md).
