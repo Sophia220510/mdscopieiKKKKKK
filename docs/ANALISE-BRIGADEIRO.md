@@ -44,7 +44,7 @@ Validação concluída: compilação de produção, TypeScript e lint dos arquiv
 
 Para executar: `npm install` e `npm run dev`. Para gerar a versão de produção: `npm run build`.
 
-Os arquivos preservados da referência pertencem aos respectivos titulares; as imagens novas de Matheus foram geradas por IA para o exercício escolar. Os prints de avaliações foram preservados sem alterações. O vídeo original foi removido. O projeto identifica o caráter escolar nos metadados, no rodapé e na demonstração de compra, e desativa a indexação. Os scripts comerciais de rastreamento do original não foram incluídos.
+Os arquivos preservados da referência pertencem aos respectivos titulares; as imagens novas de Matheus foram geradas por IA para o exercício escolar. Os prints de avaliações foram preservados sem alterações. O vídeo original foi removido. O projeto identifica o caráter escolar nos metadados e na demonstração de compra, e desativa a indexação. Os scripts comerciais de rastreamento do original não foram incluídos.
 
 O original contém diferenças de valores entre a oferta e uma resposta das perguntas frequentes, além de números de alunos e créditos de anos anteriores. Esses elementos foram mantidos para preservar a referência antes dos testes de alterações.
 

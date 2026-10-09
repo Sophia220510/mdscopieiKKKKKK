@@ -9,12 +9,6 @@
   background: #f5f1eb;
   border-radius: inherit;
 }
-.elementor .school-project-note {
-  color: #eed6d2;
-  font-size: 10px;
-  line-height: 1.6;
-  margin-top: 8px;
-}
 .school-checkout {
   width: min(460px, calc(100% - 32px));
   margin: auto;
