@@ -20,7 +20,6 @@ interface CarouselSettings {
 
 export function BrigadeiroPage() {
   const pageRef = useRef<HTMLElement>(null);
-  const checkoutRef = useRef<HTMLDialogElement>(null);
 
   useEffect(() => {
     const page = pageRef.current;
@@ -87,10 +86,6 @@ export function BrigadeiroPage() {
         event.preventDefault();
         toggle(title);
       }
-      if (event.target.closest('a[href*="pay.kiwify.com.br"]')) {
-        event.preventDefault();
-        checkoutRef.current?.showModal();
-      }
     };
     const onKeyDown = (event: KeyboardEvent) => {
       if (!(event.target instanceof Element)) return;
@@ -126,40 +121,12 @@ export function BrigadeiroPage() {
   }, []);
 
   return (
-    <>
-      <main
-        ref={pageRef}
-        className="elementor elementor-3518"
-        data-elementor-type="wp-page"
-        data-elementor-id="3518"
-        dangerouslySetInnerHTML={{ __html: markup }}
-      />
-      <dialog
-        ref={checkoutRef}
-        className="school-checkout"
-        aria-labelledby="checkout-title"
-        onClick={(event) => {
-          if (event.target === event.currentTarget) checkoutRef.current?.close();
-        }}
-      >
-        <button
-          className="school-checkout-close"
-          aria-label="Fechar"
-          onClick={() => checkoutRef.current?.close()}
-        >
-          ×
-        </button>
-        <p className="school-checkout-label">DEMONSTRAÇÃO ESCOLAR</p>
-        <h2 id="checkout-title">O Brigadeiro Perfeito</h2>
-        <p>Valor simbólico de R$37,00 à vista</p>
-        <p>
-          Este botão simula a etapa de compra para os testes do projeto. Nenhum pagamento é
-          realizado.
-        </p>
-        <button className="school-checkout-back" onClick={() => checkoutRef.current?.close()}>
-          Voltar para o site
-        </button>
-      </dialog>
-    </>
+    <main
+      ref={pageRef}
+      className="elementor elementor-3518"
+      data-elementor-type="wp-page"
+      data-elementor-id="3518"
+      dangerouslySetInnerHTML={{ __html: markup }}
+    />
   );
 }

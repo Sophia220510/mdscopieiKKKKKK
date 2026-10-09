@@ -1,4 +1,4 @@
-/* Original responsive styles: public/replica. Test dialog styles: below. */
+/* Original responsive styles: public/replica. Page adjustments: below. */
 .elementor [data-replica-section="oferta"] .elementor-element-beacb3b .elementor-heading-title {
   font-size: 20px;
   line-height: 1.4;
@@ -12,55 +12,4 @@
   object-position: center 24%;
   background: #f5f1eb;
   border-radius: inherit;
-}
-.school-checkout {
-  width: min(460px, calc(100% - 32px));
-  margin: auto;
-  padding: 40px 30px 30px;
-  border: 0;
-  border-radius: 16px;
-  color: #555;
-  background: #fff8f4;
-  font-family: "Sora", sans-serif;
-  box-shadow: 0 20px 80px #0004;
-}
-.school-checkout::backdrop {
-  background: #261010a6;
-}
-.school-checkout h2 {
-  font-size: 26px;
-  color: #8c3939;
-}
-.school-checkout p {
-  line-height: 1.6;
-}
-.school-checkout .school-checkout-label {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: #8c3939;
-}
-.school-checkout-close {
-  position: absolute;
-  top: 10px;
-  right: 14px;
-  padding: 4px 10px;
-  border: 0;
-  background: transparent;
-  color: #8c3939;
-  font-size: 28px;
-  cursor: pointer;
-}
-.school-checkout-back {
-  border: 0;
-  border-radius: 6px;
-  padding: 14px 20px;
-  color: white;
-  background: #8c3939;
-  font: inherit;
-  cursor: pointer;
-}
-.school-checkout button:focus-visible {
-  outline: 3px solid #8c3939;
-  outline-offset: 4px;
 }

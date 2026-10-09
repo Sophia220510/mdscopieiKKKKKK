@@ -2,7 +2,7 @@
 
 Adaptação da página <https://obrigadeiroperfeito.com.br/> para um exercício escolar de desenvolvimento web. Inclui 12 seções, imagens e fontes locais, carrosséis responsivos e perguntas expansíveis. O personagem Matheus e suas três imagens foram criados por IA; o carrossel mantém os 19 prints originais das avaliações das alunas.
 
-Os botões de compra abrem uma demonstração local identificada como projeto escolar. Não há processamento de pagamentos.
+Os sete botões de compra abrem diretamente o checkout externo informado: <https://pay.kiwify.com.br/rL2kTRo>.
 
 ## Executar
 

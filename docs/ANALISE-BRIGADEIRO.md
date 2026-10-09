@@ -6,7 +6,7 @@ Os números da comparação visual abaixo se referem à primeira reprodução, a
 
 ## Estrutura analisada
 
-A página pública é uma landing page longa, sem menu nem links de navegação para outras páginas do próprio domínio. Todos os sete botões comerciais apontam para o mesmo checkout externo da Kiwify. Esse checkout é um serviço separado; a réplica abre uma demonstração escolar local ao clicar nesses botões.
+A página pública é uma landing page longa, sem menu nem links de navegação para outras páginas do próprio domínio. Todos os sete botões comerciais abrem diretamente o checkout externo informado: <https://pay.kiwify.com.br/rL2kTRo>.
 
 | Seção | Elementos e comportamento |
 | --- | --- |
@@ -38,14 +38,14 @@ Validação concluída: compilação de produção, TypeScript e lint dos arquiv
 ## Implementação e próximos testes
 
 - `src/data/brigadeiro-sections.json`: conteúdo dividido por seção; mantém as classes usadas nos estilos originais.
-- `src/components/BrigadeiroPage.tsx`: carrosséis, perguntas expansíveis, animações de entrada e demonstração de compra.
+- `src/components/BrigadeiroPage.tsx`: carrosséis, perguntas expansíveis e animações de entrada. Os links de compra usam a navegação nativa do navegador.
 - `public/replica/original.css` e `inline.css`: estilos de referência com imagens e fontes apontando para arquivos locais.
-- `src/styles.css`: estilos adicionais da demonstração de compra.
+- `src/styles.css`: ajustes do preço e da imagem do confeiteiro.
 
 Para executar: `npm install` e `npm run dev`. Para gerar a versão de produção: `npm run build`.
 
-Os arquivos preservados da referência pertencem aos respectivos titulares; as imagens novas de Matheus foram geradas por IA para o exercício escolar. Os prints de avaliações foram preservados sem alterações. O vídeo original foi removido. O projeto identifica o caráter escolar nos metadados e na demonstração de compra, e desativa a indexação. Os scripts comerciais de rastreamento do original não foram incluídos.
+Os arquivos preservados da referência pertencem aos respectivos titulares; as imagens novas de Matheus foram geradas por IA para o exercício escolar. Os prints de avaliações foram preservados sem alterações. O vídeo original foi removido. O projeto identifica o caráter escolar nos metadados e desativa a indexação. Os scripts comerciais de rastreamento do original não foram incluídos.
 
-O preço exibido na oferta, nas perguntas frequentes e na demonstração de compra é R$37,00 à vista. Os sete botões de compra usam a chamada “Quero meu guia por R$37”.
+O preço exibido na oferta e nas perguntas frequentes é R$37,00 à vista. Os sete botões de compra usam a chamada “Quero meu guia por R$37”. A demonstração local de compra foi removida ao conectar o checkout externo.
 
 As capturas e scripts de inspeção ficam na pasta local `.reference/`, ignorada pelo Git. A estrutura e os arquivos necessários para executar a réplica estão no código e em `public/replica/`.
