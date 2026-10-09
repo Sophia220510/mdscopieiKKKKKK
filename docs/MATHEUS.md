@@ -8,6 +8,8 @@ Matheus é um confeiteiro adulto fictício criado por IA. Tem cabelo loiro escur
 - `public/replica/rafael/rafael-capa-desktop.png`: livros com Matheus na capa, para computador.
 - `public/replica/rafael/rafael-capa-mobile.png`: livros com Matheus na capa, para celular.
 
+Os PNGs são os arquivos originais gerados. O site entrega versões WebP menores, com nomes que incluem o hash do conteúdo, para reduzir downloads e permitir cache seguro.
+
 ## Prompts finais
 
 **Retrato:** substituir apenas a mulher por um confeiteiro brasileiro adulto de aproximadamente 35 anos, loiro escuro de cabelo curto levemente bagunçado, barba clara por fazer, rosto comum com assimetria sutil, poros visíveis, pequenas sardas e linhas de expressão naturais. Porte médio, sorriso discreto olhando para a panela. Dólmã marfim e avental vinho com dobras reais. Fotografia espontânea com luz de janela, sem retoque de beleza, pele plástica ou aparência de modelo. Preservar pose, bancada, panela preta, fogareiro, fundo interno cinza, moldura arredondada, contorno vinho e brigadeiros decorativos. Fundo externo transparente com canal alfa. Sem textos novos ou marcas d'água.

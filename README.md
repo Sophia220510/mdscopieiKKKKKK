@@ -4,6 +4,8 @@ Adaptação da página <https://obrigadeiroperfeito.com.br/> para um exercício 
 
 Os sete botões de compra abrem diretamente o checkout externo informado: <https://pay.kiwify.com.br/rL2kTRo>.
 
+As imagens dos carrosséis carregam conforme se aproximam da tela. Fotos e fundos otimizados usam WebP e cache; os prints originais das avaliações foram preservados. Veja a medição em [Desempenho](docs/DESEMPENHO.md).
+
 ## Executar
 
 Requer Node.js 22.12 ou superior e npm.

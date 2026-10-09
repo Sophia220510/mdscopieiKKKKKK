@@ -92,6 +92,29 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "theme-color", content: "#8c3939" },
     ],
     links: [
+      {
+        rel: "preload",
+        as: "image",
+        type: "image/webp",
+        media: "(max-width: 767px)",
+        href: "/replica/optimized/hero-mobile.cf00d57a586e.webp",
+        fetchPriority: "high",
+      },
+      {
+        rel: "preload",
+        as: "image",
+        type: "image/webp",
+        media: "(min-width: 768px)",
+        href: "/replica/optimized/hero-desktop.a7a54f3c34a8.webp",
+        fetchPriority: "high",
+      },
+      {
+        rel: "preload",
+        as: "font",
+        type: "font/woff2",
+        href: "/replica/assets/ed09745e799a-sora-xmqbuffyt72xzqupdg.woff2",
+        crossOrigin: "anonymous",
+      },
       { rel: "stylesheet", href: "/replica/inline.css" },
       { rel: "stylesheet", href: "/replica/original.css" },
       {

@@ -36,6 +36,8 @@ export function BrigadeiroPage() {
       carousels.push(
         new Swiper(element, {
           modules: [A11y, Autoplay, Keyboard, Navigation, Pagination],
+          // Let native lazy loading defer offscreen slides instead of downloading all images.
+          preloadImages: false,
           slidesPerView: Number(settings.slides_to_show_mobile || 1),
           slidesPerGroup: Number(settings.slides_to_scroll_mobile || 1),
           spaceBetween: settings.image_spacing_custom?.size || 20,
