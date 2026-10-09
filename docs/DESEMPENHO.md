@@ -24,4 +24,22 @@ Os PNGs originais gerados e todos os prints das alunas foram preservados. A comp
 
 Compilação, TypeScript e renderização do servidor passaram. Navegador em 1440 × 1000 e 390 × 844: 12 seções, três carrosséis com 19/14/12 slides, carregamento das imagens durante a navegação, FAQ e sete links de compra sem erros. Os prints usam exatamente os mesmos arquivos anteriores. Não houve rolagem horizontal.
 
-Relatórios completos e capturas de laboratório ficam na pasta local `.reference/`, ignorada pelo Git. A medição final publicada será registrada após o deploy.
+## Medição após publicar
+
+Versão medida: commit `3dabb4e`, disponível no endereço de produção.
+
+| Teste móvel | Antes | Depois |
+| --- | --- | --- |
+| Primeira pintura, Chrome com limitação de rede e CPU | 10,7 s | 2,0 s |
+| Nota de desempenho, Lighthouse móvel | 68/100 | 88/100 |
+| Primeira pintura, Lighthouse simulado | 2,7 s | 2,4 s |
+| LCP, Lighthouse simulado | 39,0 s | 3,0 s |
+| Recursos, Lighthouse | 14.247 KiB | 1.708 KiB |
+| Mudanças de layout, Lighthouse | 0 | 0 |
+| Tempo total de bloqueio, Lighthouse | 0 ms | 0 ms |
+
+No teste direto após a publicação, o LCP ocorreu em 2,0 s e não houve mudanças de layout nem erros de JavaScript. Os resultados mostram uma melhora substancial na abertura. O LCP simulado do Lighthouse ainda ficou em 3,0 s; não se promete o mesmo tempo em todos os aparelhos ou conexões.
+
+O cache de um ano para a imagem inicial otimizada foi confirmado pela resposta HTTP da Vercel. Relatórios completos (`lighthouse-before`, `lighthouse-after`) e capturas de laboratório ficam na pasta local `.reference/`, ignorada pelo Git.
+
+A auditoria Lighthouse para computador marcou 100/100, primeira pintura e LCP de 0,5 s, tempo de bloqueio de 0 ms e mudanças de layout de 0. O relatório fica em `.reference/lighthouse-desktop.report.html`.
