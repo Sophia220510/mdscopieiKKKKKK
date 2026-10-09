@@ -1,4 +1,8 @@
 /* Original responsive styles: public/replica. Test dialog styles: below. */
+.elementor [data-replica-section="oferta"] .elementor-element-beacb3b .elementor-heading-title {
+  font-size: 20px;
+  line-height: 1.4;
+}
 .elementor .elementor-widget-video .chef-feature-photo {
   display: block;
   position: absolute;

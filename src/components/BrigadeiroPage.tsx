@@ -151,7 +151,7 @@ export function BrigadeiroPage() {
         </button>
         <p className="school-checkout-label">DEMONSTRAÇÃO ESCOLAR</p>
         <h2 id="checkout-title">O Brigadeiro Perfeito</h2>
-        <p>8x de R$5,38 ou R$37,00 à vista</p>
+        <p>Valor simbólico de R$37,00 à vista</p>
         <p>
           Este botão simula a etapa de compra para os testes do projeto. Nenhum pagamento é
           realizado.

@@ -16,7 +16,7 @@ A página pública é uma landing page longa, sem menu nem links de navegação 
 | `sabores` | Carrossel de 14 imagens, indicadores e botão. |
 | `criatividade` | Foto do Matheus, texto sobre sabores criativos, botão e carrossel de 12 imagens com setas. |
 | `conteudo` | Lista de 10 conteúdos e imagem do guia. |
-| `oferta` | Texto, valores de 8x R$5,38 e R$37,00 à vista e botão. |
+| `oferta` | Valor simbólico de R$37,00 à vista e botão “Quero meu guia por R$37”. |
 | `garantia` | Selo e texto da garantia. |
 | `autor` | Cartão de atualizações, botão, apresentação de Matheus e retrato criado por IA. |
 | `duvidas` | Quatro perguntas que expandem e recolhem individualmente. |
@@ -46,6 +46,6 @@ Para executar: `npm install` e `npm run dev`. Para gerar a versão de produção
 
 Os arquivos preservados da referência pertencem aos respectivos titulares; as imagens novas de Matheus foram geradas por IA para o exercício escolar. Os prints de avaliações foram preservados sem alterações. O vídeo original foi removido. O projeto identifica o caráter escolar nos metadados e na demonstração de compra, e desativa a indexação. Os scripts comerciais de rastreamento do original não foram incluídos.
 
-O original contém diferenças de valores entre a oferta e uma resposta das perguntas frequentes, além de números de alunos e créditos de anos anteriores. Esses elementos foram mantidos para preservar a referência antes dos testes de alterações.
+O preço exibido na oferta, nas perguntas frequentes e na demonstração de compra é R$37,00 à vista. Os sete botões de compra usam a chamada “Quero meu guia por R$37”.
 
 As capturas e scripts de inspeção ficam na pasta local `.reference/`, ignorada pelo Git. A estrutura e os arquivos necessários para executar a réplica estão no código e em `public/replica/`.
