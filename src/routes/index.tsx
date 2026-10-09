@@ -7,7 +7,8 @@ export const Route = createFileRoute("/")({
       { title: "O Brigadeiro Perfeito — reprodução escolar" },
       {
         name: "description",
-        content: "Reprodução para estudo do layout e das interações do site O Brigadeiro Perfeito.",
+        content:
+          "Projeto escolar O Brigadeiro Perfeito com Larissa, uma confeiteira fictícia criada por IA.",
       },
       { name: "robots", content: "noindex, nofollow" },
     ],
