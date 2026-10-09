@@ -13,14 +13,13 @@ A página pública é uma landing page longa, sem menu nem links de navegação 
 | `hero` | Fundo vinho, logotipo, imagens de brigadeiros, título com destaque amarelo, subtítulo e três benefícios. |
 | `depoimentos` | Título, ornamento, carrossel de 19 imagens, indicadores e botão. |
 | `para-quem` | Fundo com bordas decoradas, quatro cartões de benefícios e botão. |
-| `aula-bonus` | Imagem e cartão explicando a aula introdutória. |
 | `sabores` | Carrossel de 14 imagens, indicadores e botão. |
 | `criatividade` | Foto da Larissa, texto sobre sabores criativos, botão e carrossel de 12 imagens com setas. |
-| `conteudo` | Lista de 11 conteúdos e imagem do guia. |
+| `conteudo` | Lista de 10 conteúdos e imagem do guia. |
 | `oferta` | Texto, valores de 8x R$5,38 e R$37,00 à vista e botão. |
 | `garantia` | Selo e texto da garantia. |
 | `autor` | Cartão de atualizações, botão, apresentação de Larissa e retrato criado por IA. |
-| `duvidas` | Sete perguntas que expandem e recolhem individualmente. |
+| `duvidas` | Seis perguntas que expandem e recolhem individualmente. |
 | `chamada-final` | Última chamada e botão. |
 | `rodape` | Créditos originais. |
 
