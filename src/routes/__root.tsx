@@ -77,31 +77,30 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Studio Renovação — Salão de Beleza no Centro de São Paulo" },
+      { title: "O Brigadeiro Perfeito — reprodução escolar" },
       {
         name: "description",
-        content:
-          "Salão de beleza acolhedor no centro de São Paulo: cortes, coloração, escova, manicure, barbearia e tratamentos.",
+        content: "Projeto escolar de reprodução do site O Brigadeiro Perfeito.",
       },
-      { name: "author", content: "Studio Renovação" },
-      { property: "og:site_name", content: "Studio Renovação" },
+      { name: "robots", content: "noindex, nofollow" },
+      { property: "og:site_name", content: "O Brigadeiro Perfeito — estudo" },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "pt_BR" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "theme-color", content: "#faf7f2" },
+      { name: "theme-color", content: "#8c3939" },
     ],
     links: [
+      { rel: "stylesheet", href: "/replica/inline.css" },
+      { rel: "stylesheet", href: "/replica/original.css" },
       {
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Jost:wght@300;400;500&display=swap",
+        rel: "icon",
+        type: "image/jpeg",
+        href: "/replica/assets/b5ded29c21f4-TESTADO-E-APROVADO-POR-MAIS-DE-1000-ALUNAS-2-300x300.jpg",
       },
-      { rel: "icon", type: "image/png", href: "/favicon.png" },
     ],
   }),
 
@@ -113,11 +112,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <head>
         <HeadContent />
       </head>
-      <body>
+      <body className="home wp-singular page-template page-template-elementor_canvas page page-id-3518 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor theme-default elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-3518">
         {children}
         <Scripts />
       </body>
