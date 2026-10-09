@@ -44,7 +44,7 @@ Validação concluída: compilação de produção, TypeScript e lint dos arquiv
 
 Para executar: `npm install` e `npm run dev`. Para gerar a versão de produção: `npm run build`.
 
-Os arquivos preservados da referência pertencem aos respectivos titulares; as imagens novas de Matheus foram geradas por IA para o exercício escolar. Os prints de avaliações foram preservados sem alterações. O vídeo original foi removido. O projeto identifica o caráter escolar nos metadados e desativa a indexação. Os scripts comerciais de rastreamento do original não foram incluídos.
+Os arquivos preservados da referência pertencem aos respectivos titulares; as imagens novas de Matheus foram geradas por IA para o exercício escolar. Os prints de avaliações foram preservados sem alterações. O vídeo original foi removido. O projeto identifica o caráter escolar nos metadados e desativa a indexação. Os scripts comerciais de rastreamento do original não foram incluídos. O usuário adicionou posteriormente seu pixel Meta `1579260150039081`; veja a [auditoria](PIXEL.md).
 
 O preço exibido na oferta e nas perguntas frequentes é R$37,00 à vista. Os sete botões de compra usam a chamada “Quero meu guia por R$37”. A demonstração local de compra foi removida ao conectar o checkout externo.
 

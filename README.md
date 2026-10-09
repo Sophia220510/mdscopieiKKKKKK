@@ -6,6 +6,8 @@ Os sete botões de compra abrem diretamente o checkout externo informado: <https
 
 As imagens dos carrosséis carregam conforme se aproximam da tela. Fotos e fundos otimizados usam WebP e cache; os prints originais das avaliações foram preservados. Veja a medição em [Desempenho](docs/DESEMPENHO.md).
 
+O rastreamento instalado na página é o pixel Meta `1579260150039081`, com `PageView` e fallback sem JavaScript. Veja a [auditoria do pixel](docs/PIXEL.md).
+
 ## Executar
 
 Requer Node.js 22.12 ou superior e npm.
