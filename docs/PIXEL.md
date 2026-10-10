@@ -1,5 +1,7 @@
 # Pixel Meta
 
+**Situação mais recente (reteste em 09/10/2026, após o usuário configurar a Kiwify):** `PageView` e `InitiateCheckout` confirmados no computador e emulação de celular para `1579260150039081`. `Purchase` permanece sem validação de ponta a ponta, pois nenhuma compra foi realizada. A seção anterior de checkout abaixo registra o diagnóstico antes dessa configuração.
+
 Pixel instalado: `1579260150039081`, conforme o código fornecido pelo usuário. O script oficial é carregado de forma assíncrona, com inicialização única na página e evento `PageView`. O fallback `noscript` usa o mesmo ID e evento.
 
 ## Auditoria
@@ -32,6 +34,22 @@ Foi seguido um botão de compra do site até `https://pay.kiwify.com.br/rL2kTRo`
 Para configurar os dois eventos, na conta Kiwify abra **Produtos → produto deste checkout → Configurações → Pixels de conversão**, adicione o ID `1579260150039081`, selecione o domínio adequado e salve. Segundo a [documentação oficial da Kiwify](https://ajuda.kiwify.com.br/pt-br/article/como-configurar-o-pixel-do-facebook-1rb2xtr/), a integração envia `InitiateCheckout` quando o visitante acessa o checkout e `Purchase` quando a compra é aprovada no cartão ou Pix. O produto deve ser configurado nessa conta; instalar o script na página de vendas não configura automaticamente o checkout.
 
 Depois de salvar, valide a visita ao checkout em **Testar eventos** na Meta. Para validar `Purchase`, acompanhe uma compra aprovada e confira ID, valor e moeda no evento. Não foi criado um disparo de `Purchase` por clique ou visita, pois esses comportamentos não confirmam pagamento.
+
+## Reteste após a configuração na Kiwify — 09/10/2026
+
+Em duas sessões novas do Chrome, uma no computador e outra com emulação de celular, foi aberta a página de vendas publicada e seguido o botão até o checkout. Nenhum formulário de pagamento foi preenchido e nenhuma cobrança foi criada.
+
+- O `PageView` da página de vendas permaneceu funcionando com o ID `1579260150039081`.
+- A configuração pública da Kiwify agora contém esse ID em `pixels`, com domínio `pixels.kiwify.com.br`. O campo legado `facebook_pixels` continua `null`; esse campo isolado não indica ausência do pixel.
+- O checkout inicializou o pixel em um iframe da Kiwify e fez duas chamadas no SDK: `PageView` e `InitiateCheckout`.
+- Em cada sessão foi observada uma requisição `InitiateCheckout` para esse ID em `www.facebook.com/tr/`, com resposta HTTP 200, além do transporte do próprio gateway Meta configurado para o pixel.
+- Não foram observados erros JavaScript nem disparos indevidos de `Purchase` ao visitar o checkout.
+- A Kiwify passou `product_price=31.18` e `currency=BRL` ao iframe. O código público do iframe usa esses dados como valor e moeda de `InitiateCheckout`. O checkout continua exibindo preço base de R$ 37,00; este teste não confirma o motivo da diferença do valor informado ao pixel.
+- O código público da integração possui tratamento de `Purchase` por mensagem da plataforma, mas sua execução após um pagamento aprovado não foi testada. Não se pode concluir entrega/atribuição desse evento apenas pela existência do código.
+
+O envio HTTP 200 confirma que a requisição foi aceita pelo endpoint, sem garantir exibição no Gerenciador de Eventos, deduplicação entre transportes ou atribuição a uma campanha. O resultado da campanha e as vendas aprovadas na Kiwify não estavam acessíveis nesta sessão. Não é possível atribuir as zero vendas relatadas à falta anterior do pixel apenas com a informação de R$ 28 gastos.
+
+Evidências do reteste: `.reference/checkout-events-recheck.json` e `.reference/kiwify-pixel-source.html` (arquivos locais ignorados pelo Git). Os testes de navegação podem aparecer nos eventos do pixel.
 
 ## Arquivos
 
